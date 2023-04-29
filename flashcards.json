@@ -1,22 +1,22 @@
 {
   "cards": [
     {
-      "name": "name1",
-      "answer": "answer1",
-      "hint": "hint1",
-      "evidence": "evidence1"
+      "name": "What is a t-test used for?",
+      "answer": "It is used to compare the means of two groups.",
+      "hint": "",
+      "evidence": ""
     },
     {
-      "name": "name2",
-      "answer": "answer2",
-      "hint": "hint2",
-      "evidence": "evidence2"
+      "name": "What is a chi-squared test?",
+      "answer": "It tests the independence of a pair of random variables based on observations of the pairs.",
+      "hint": "",
+      "evidence": "https://en.wikipedia.org/wiki/Chi-squared_test"
     },
     {
       "name": "What is an f-test used for?",
       "answer": "It is used to identify which model best fits the population from which the data was sampled.",
-      "hint": "hint2",
-      "evidence": "evidence2"
+      "hint": "",
+      "evidence": ""
     }
   ]
 }
