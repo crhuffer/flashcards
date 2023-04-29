@@ -1,0 +1,23 @@
+{
+  "cards": [
+    {
+      "name": "name1",
+      "answer": "answer1",
+      "hint": "hint1",
+      "evidence": "evidence1"
+    },
+    {
+      "name": "name2",
+      "answer": "answer2",
+      "hint": "hint2",
+      "evidence": "evidence2"
+    },
+    {
+      "name": "What is an f-test used for?",
+      "answer": "It is used to identify which model best fits the population from which the data was sampled.",
+      "hint": "hint2",
+      "evidence": "evidence2"
+    }
+  ]
+}
+
