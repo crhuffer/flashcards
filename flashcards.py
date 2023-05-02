@@ -29,7 +29,7 @@ class ScoreKeeper():
         str_datetime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
         if iscorrect:
-            self.df.loc[index, 'numbercorrect'] = str(1 + int(self.df.loc[index, 'numberincorrect']))
+            self.df.loc[index, 'numbercorrect'] = str(1 + int(self.df.loc[index, 'numbercorrect']))
             self.df.loc[index, 'datetimescorrect'].append(str_datetime)
         else:
             self.df.loc[index, 'numberincorrect'] = str(1 + int(self.df.loc[index, 'numberincorrect']))
@@ -183,10 +183,10 @@ class MyWindow(QMainWindow):
 
         ## Add ui elements to the layouts to determine ordering.
 
-        self.layout_page.addLayout(self.layout_lastactiondetails)
+        self.layout_page.addLayout(self.layout_cards)
         self.layout_page.addLayout(self.layout_buttonsrow1)
         self.layout_page.addLayout(self.layout_buttonsrow2)
-        self.layout_page.addLayout(self.layout_cards)
+        self.layout_page.addLayout(self.layout_lastactiondetails)
 
         self.layout_lastactiondetails.addWidget(self.labelLastActionDescriptor)
         self.layout_lastactiondetails.addWidget(self.valueLastActionDescriptor)
