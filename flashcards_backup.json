@@ -1,12 +1,12 @@
 {
   "cards": [
-        {
-          "name": "What is a t-test used for?",
-          "answer": "It is used to compare the means of two groups.",
-          "hint": "",
-          "evidence": "",
-          "index": "0"
-        },
+    {
+      "name": "What is a t-test used for?",
+      "answer": "It is used to compare the means of two groups.",
+      "hint": "",
+      "evidence": "",
+      "index": "0"
+    },
     {
       "name": "What is a chi-squared test?",
       "answer": "It tests the independence of a pair of random variables based on observations of the pairs.",
