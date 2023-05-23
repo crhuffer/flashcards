@@ -100,11 +100,15 @@ class MyWindow(QMainWindow):
         try:
             dict_data = self.list_cards[self.index_list_cards]
         except IndexError:
-            dict_data = {'name': 'Finished', 'answer': '', 'hint': '', 'evidence': '', 'index': ''}
+            dict_data = {'name': 'Finished', 'answer': '', 'index': ''}
 
-        self.prompt, self.answer, self.hint, self.evidence, self.cardindex = dict_data['name'], dict_data['answer'], \
-                                                                             dict_data['hint'], \
-                                                                             dict_data['evidence'], dict_data['index']
+        self.prompt, self.answer, self.cardindex = dict_data['name'], dict_data['answer'], dict_data['index']
+
+        #     dict_data = {'name': 'Finished', 'answer': '', 'hint': '', 'evidence': '', 'index': ''}
+
+        # self.prompt, self.answer, self.hint, self.evidence, self.cardindex = dict_data['name'], dict_data['answer'], \
+        #                                                                      dict_data['hint'], \
+        #                                                                      dict_data['evidence'], dict_data['index']
 
     def get_list_cards(self):
         return json.load(open('flashcards.json'))['cards']
