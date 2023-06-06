@@ -1,0 +1,60 @@
+{
+    "cards": [
+        {
+            "name": "What is a t-test used for?",
+            "answer": "It is used to compare the means of two groups.",
+            "hint": "",
+            "evidence": "",
+            "index": "0"
+        },
+        {
+            "name": "What is a chi-squared test?",
+            "answer": "It tests the independence of a pair of random variables based on observations of the pairs.",
+            "hint": "",
+            "evidence": "https://en.wikipedia.org/wiki/Chi-squared_test",
+            "index": "1"
+        },
+        {
+            "name": "What is an f-test used for?",
+            "answer": "It is used to identify which model best fits the population from which the data was sampled.",
+            "hint": "",
+            "evidence": "",
+            "index": "2"
+        },
+        {
+            "name": "What does it mean when we say a language is dynamically typed?",
+            "answer": "A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc.",
+            "index": "3"
+        },
+        {
+            "name": "What are the steps in the Red, Green, Refactor development methodology?",
+            "answer": "Red - write a test that tests part of the functionality. Green - implement the test-supporting functionality to pass the test. Refactor - improve the production code and tests to absolute perfection.",
+            "index": "4"
+        },
+        {
+            "name": "In software engineering, what is test driven development?",
+            "answer": "It is a methodology that focuses on creating unit tests before developing the actual code to help facilitate quickly providing incremental value while also encouraging testing of all of the primary features of the software. ",
+            "index": "5"
+        },
+        {
+            "name": "Types of Mock Objects: What is a Fake?",
+            "answer": "Fakes are objects that have working implementations. A fake object implements the same interface as a real object but takes shortcuts to improve performance. Fakes are generally used when we need to test something that depends on an external service or API, and we don\u2019t want to make actual calls to that service.",
+            "index": "6"
+        },
+        {
+            "name": "Types of Mock Objects: What are Mocks?\t",
+            "answer": "Mocks are objects that have predefined behavior. These objects register calls they receive, allowing us to assert how we use them in the code. Unlike fakes, mocks don\u2019t have working implementations. Instead, they have pre-programmed expectations about how they will be used in the code.",
+            "index": "7"
+        },
+        {
+            "name": "In SQL what is a CTE?",
+            "answer": "A common table expression, or CTE, is a temporary named result set created from a simple SELECT statement that can be used in a subsequent SELECT statement",
+            "index": "8"
+        },
+        {
+            "name": "In finance what is the Macaulay duration?",
+            "answer": "Macaulay duration is a weighted average of the times until the cash flows of a fixed-income instrument are received.",
+            "index": "9"
+        }
+    ]
+}

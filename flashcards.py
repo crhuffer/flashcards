@@ -59,12 +59,22 @@ class MyWindow(QMainWindow):
         self.answer = None
         self.prompt = None
         self.index_list_cards = 0
+        # TODO: Make a config object that knows how to extract its information.
+        self.config = json.load(open('./config.json'))
+
+        self.parse_config()
+        
         self.list_cards = self.get_list_cards()
         self.get_data_from_current_card()
 
         self.define_page_layout()
         # by default it will show the answer, overwrite it with ? by rerunning get_answer with hidden=True.
         self.labelAnswer.setText(self.get_answer(hidden=True))
+
+
+
+    def parse_config(self):
+        self.pathcarddata = self.config['pathToCardData']
 
     def get_answer(self, hidden=False):
         if hidden:
@@ -111,7 +121,7 @@ class MyWindow(QMainWindow):
         #                                                                      dict_data['evidence'], dict_data['index']
 
     def get_list_cards(self):
-        return json.load(open('flashcards.json'))['cards']
+        return json.load(open(self.pathcarddata))['cards']
 
     def mark_correct(self):
         self.scorekeeper.report_answer(self.cardindex, True)
